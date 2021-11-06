@@ -46,10 +46,6 @@ class Project
     clockin if !$clockintime
   end
 
-  def givefield #returns the time worked field associated with a given project
-    return @fieldtimeworked
-  end
-
   def self.all
     @@projects
   end
@@ -70,7 +66,7 @@ class Float
 
 end
 
-require 'project_list' # separate file with a list of projects
+require "./project_list" # separate file with a list of projects
 nonproj = Project.new('non-project time')
 
 def putprojs

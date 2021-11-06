@@ -125,6 +125,7 @@ def clearall
   $clockintime = nil
   $totaltime = 0
   $viewclock['text'] = 'clocked out'
+  disengage
   Project.all.each do |proj|
     proj.cleartime
   end

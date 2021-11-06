@@ -70,14 +70,8 @@ class Float
 
 end
 
-# -- PUT PROJECTS HERE --
-ci = Project.new('CI')
-sixtyseven = Project.new('4467')
-sixtyeight = Project.new('4468')
-fiftysix = Project.new('5606')
-ast = Project.new('AST-1000')
+require 'project_list' # separate file with a list of projects
 nonproj = Project.new('non-project time')
-# -- END PROJECT ZONE --
 
 def putprojs
   currentcolumn = 0
